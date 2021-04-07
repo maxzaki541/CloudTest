@@ -1,13 +1,11 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return render_template("home.html")
+
 
 @app.route("/John")
 def John():
-    return "Hello John."
+    return "Hello Pachara Sukthai."
 
 @app.route('/aboutUs')
 def aboutUs():
